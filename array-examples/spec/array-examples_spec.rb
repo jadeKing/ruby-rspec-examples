@@ -14,8 +14,6 @@ require_relative 'spec_helper.rb'
 
   describe "array examples - get names from top & bottom of list" do
     it "returns string with first and last name in the list" do
-      name_list = ["jade","alan", "liam", "ben"]
-      expect(get_top_and_bottom_name(list)).to eql
-        "First name on the list is jade,second name on the list is ben"
+      expect(get_top_and_bottom_name(["jade","alan", "liam", "ben"])).to eql "First name on the list is jade, second name on the list is ben"
     end
   end
